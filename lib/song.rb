@@ -19,7 +19,6 @@ class Song
   end
 
   def self.new_by_name(song_name)
-      binding.pry
       song = self.new
       self.name = song.name
       song.name = song_name
