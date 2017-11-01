@@ -36,7 +36,6 @@ class Song
   end
 
   def self.find_or_create_by_name(song_name)
-    #binding.pry
     if song = self.find_by_name(song_name)
       song
     else
@@ -45,6 +44,7 @@ class Song
   end
 
   def self.alphabetical
+    binding.pry
     self.all.sort
   end
 
