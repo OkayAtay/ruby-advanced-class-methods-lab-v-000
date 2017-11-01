@@ -42,4 +42,9 @@ class Song
       self.create_by_name(song_name)
     end
   end
+
+  def self.destroy_all
+    self.all.clear
+
+  end
 end
