@@ -28,7 +28,6 @@ class Song
     song = self.new
     song.save
     song.name = song_name
-    song.name.save
     song
   end
 end
