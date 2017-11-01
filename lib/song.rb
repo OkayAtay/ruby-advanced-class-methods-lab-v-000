@@ -50,7 +50,12 @@ class Song
 
   def self.new_from_filename(filename)
     binding.pry
-    filename.chomp(".mp3").split(" - ")
+    data = filename.chomp(".mp3").split(" - ")
+    data[0] = artist_name
+    data[1] = name
+    song = self.new
+    song.artist_name = artist_name
+    song.name = name
   end
 
   def self.create_from_filename(filename)
