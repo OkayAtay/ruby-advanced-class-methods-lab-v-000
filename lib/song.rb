@@ -44,12 +44,13 @@ class Song
   end
 
   def self.alphabetical
-    binding.pry
+
     self.all.sort_by{|song| song.name}
   end
 
   def self.new_from_filename(filename)
-
+    binding.pry
+    filename.split("-")
   end
 
   def self.create_from_filename(filename)
